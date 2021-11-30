@@ -1,0 +1,18 @@
+# Latex
+*.aux
+*.log
+*.lof
+*.out
+*.alg
+*.toc
+
+# Biber
+*.bcf
+*.run.xml
+
+# Glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls

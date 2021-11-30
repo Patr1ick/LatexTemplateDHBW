@@ -1,0 +1,66 @@
+\documentclass[12pt,a4paper,oneside,parskip=half]{scrreprt}
+
+% Load Packages
+\input{pages/util/header.tex}
+
+% Load the configuration
+\input{config.tex}
+
+% Language
+\ifthenelse{\boolean{german}}{
+    \usepackage[ngerman]{babel}
+}
+
+% Glossary
+\makeglossaries
+\input{pages/util/glossary.tex}
+\input{pages/util/acronyms.tex}
+\glsaddall
+
+% ----------
+% -Document-
+% ----------
+\begin{document}    
+
+% Cover Page
+\input{pages/util/cover.tex}
+\newpage
+
+% Declaration
+\input{pages/util/declaration.tex}
+\newpage
+
+% Abstracts
+\input{pages/abstract.tex}
+
+% TOC
+\tableofcontents
+\newpage
+
+% List of Figures
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+\newpage
+
+% Acronyms
+\ifthenelse{\boolean{german}}{
+    \printglossary[type=\acronymtype, title=Akronyme]
+}{
+    \printglossary[type=\acronymtype]
+}
+
+\newpage
+
+% *******
+% Your Content here
+% *******
+
+% References
+\printbibliography
+\newpage
+
+% Glossary
+\printglossary
+\glsaddallunused % Print all Glossary entries
+
+\end{document}

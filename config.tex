@@ -1,0 +1,26 @@
+% Language
+\newboolean{german}
+\setboolean{german}{false}
+
+% Title Page
+\newcommand{\Title}{Project Title}            % Your thesis title
+\newcommand{\Author}{Your name}               % Your name
+\newcommand{\Projecttype}{Project thesis}     % The type of the thesis 
+\newcommand{\Studycourse}{Computer Science}   % Your Course of Study
+\newcommand{\Date}{DD.MM.YYYY}                % The Submission date
+\newcommand{\Studentnumber}{\dots}            % The editing time 
+\newcommand{\Course}{\dots}                   % Your Student number and the designation of your course
+\newcommand{\Partner}{\dots}                  % Your company
+\newcommand{\Supervisor}{\dots}               % Your company advisor
+\newcommand{\Reviewer}{\dots}                 % The reviewer at the DHBW
+
+% Unversity
+\ifthenelse{\boolean{german}}{
+    \newcommand{\University}{Duale Hochschule Baden-Württemberg Stuttgart}
+}{
+    \newcommand{\University}{Baden-Wuerttemberg Cooperative State University Stuttgart}
+}
+
+% Declaration Page
+\newcommand{\DeclarationLocation}{Stuttgart}
+\newcommand{\DeclarationDate}{DD.MM.YYYY}

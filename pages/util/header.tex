@@ -1,0 +1,49 @@
+% Styling
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[onehalfspacing]{setspace}
+\usepackage[margin=2cm,foot=1cm, includeheadfoot]{geometry}
+
+% Font
+\usepackage{palatino}
+
+% Header, Footer, etc.
+\usepackage[headsepline]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+
+\automark{chapter}
+\ihead{}
+\chead{}
+\ohead{\headmark}
+\ifoot{}
+\cfoot*{\pagemark}
+\ofoot{}
+
+% Images packages
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage[format=plain, indention=0cm]{caption}
+
+% Links
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  linktoc=all
+}
+
+% For landscape pages
+\usepackage{pdflscape}
+
+% Glossary
+\usepackage[toc, nonumberlist, automake, acronyms]{glossaries}
+
+% References
+\usepackage{url}
+\usepackage[backend=biber, bibencoding=utf8, style=ieee]{biblatex}
+\addbibresource{resources/references/ref.bib}
+
+% Other
+\usepackage{ifthen}    % To switch between the languages
+\usepackage{todonotes} % Useful package for notes
+\usepackage{multicol}  % 

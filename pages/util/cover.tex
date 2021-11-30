@@ -1,0 +1,31 @@
+\begin{titlepage}
+    \vspace*{12mm}
+	\begin{figure}[th]
+        \begin{subfigure}{0.5\textwidth}
+            \includegraphics[width=0.8\textwidth]{resources/images/logo/placeholder.png}
+        \end{subfigure}
+        \begin{subfigure}{0.5\textwidth}
+            \includegraphics[width=0.9\textwidth]{resources/images/logo/DHBW-Logo.png}
+        \end{subfigure}
+    \end{figure}
+    \centering
+    \begin{center}
+		\vspace*{12mm}	{\LARGE\textbf{\Title} } \\
+		\vspace*{12mm}	{\large\textbf{\Projecttype}} \\
+		\vspace*{12mm}	\ifthenelse{\boolean{german}}{in dem Studiengang}{of the study program} \\
+		\vspace*{3mm}	{\ \textbf{\Studycourse}} \\
+		\vspace*{12mm}	\ifthenelse{\boolean{german}}{an der}{at the} \\
+        \vspace*{3mm}	{\textbf{\University}} \\
+		\vspace*{12mm}	\ifthenelse{\boolean{german}}{von}{from} \\
+		\vspace*{3mm}	{\large\textbf{\Author}} \\
+		\vspace*{12mm}	\Date \\
+	\end{center}
+    \vspace*{6mm}
+    \begin{tabular}{l l}
+        \ifthenelse{\boolean{german}}{Matrikelnummer}{Studentnumber} & \Studentnumber \\
+        \ifthenelse{\boolean{german}}{Kurs}{Course} & \Course \\
+        \ifthenelse{\boolean{german}}{Dualer Partner}{Dual partner} & \Partner \\
+        \ifthenelse{\boolean{german}}{Betreuer:in des Dualen Partners}{Supervisor of the dual partner} & \Supervisor \\
+        \ifthenelse{\boolean{german}}{Gutachter:in der DHBW}{Reviewer of the Dual University} & \Reviewer
+    \end{tabular}
+\end{titlepage}
