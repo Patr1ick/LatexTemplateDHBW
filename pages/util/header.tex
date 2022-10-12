@@ -1,5 +1,5 @@
 % Styling
-\usepackage[utf8]{inputenc}
+\usepackage[utf8]{luainputenc}
 \usepackage[T1]{fontenc}
 \usepackage[onehalfspacing]{setspace}
 \usepackage[margin=2cm,foot=1cm, includeheadfoot]{geometry}
@@ -36,12 +36,16 @@
 \usepackage{pdflscape}
 
 % Glossary
-\usepackage[toc, nonumberlist, automake, acronyms]{glossaries}
+\usepackage[toc, nonumberlist, automake, acronyms, nopostdot]{glossaries}
 
 % References
 \usepackage{url}
 \usepackage[backend=biber, bibencoding=utf8, style=ieee]{biblatex}
 \addbibresource{resources/references/ref.bib}
+
+% Math
+\usepackage{amsmath}
+\usepackage{bm}
 
 % Other
 \usepackage{ifthen}    % To switch between the languages
