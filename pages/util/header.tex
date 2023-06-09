@@ -5,7 +5,7 @@
 \usepackage[margin=2cm,foot=1cm, includeheadfoot]{geometry}
 
 % Font
-\usepackage{palatino}
+% \usepackage{palatino}
 
 % Header, Footer, etc.
 \usepackage[headsepline]{scrlayer-scrpage}
@@ -32,23 +32,22 @@
   linktoc=all
 }
 
-% For landscape pages
-\usepackage{pdflscape}
-
 % Glossary
 \usepackage[toc, nonumberlist, automake, acronyms, nopostdot]{glossaries}
 
 % References
 \usepackage{url}
-\usepackage[backend=biber, bibencoding=utf8, style=ieee]{biblatex}
+\usepackage[backend=biber, bibencoding=utf8, style=ieee, dashed=false]{biblatex}
 \addbibresource{resources/references/ref.bib}
 
 % Math
 \usepackage{amsmath}
 \usepackage{bm}
 
-% Other
-\usepackage{ifthen}    % To switch between the languages
-\usepackage{todonotes} % Useful package for notes
-\usepackage{multicol}  % 
-\usepackage{lipsum}    % Just for the example
+% Only for the template
+\usepackage{ifthen}     % To switch between the languages
+\usepackage{lipsum}     % Just for the example
+
+% Other useful packages
+\usepackage{todonotes}  % Creates notes
+\usepackage{multicol}   % Multiple columns per page

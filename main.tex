@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper,oneside,parskip=half]{scrreprt}
 
-% Load Packages
+% Load packages
 \input{pages/util/header.tex}
 
 % Load the configuration
@@ -48,6 +48,11 @@
 \listoffigures
 \newpage
 
+% List of tables
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+\newpage
+
 % Acronyms
 \ifthenelse{\boolean{german}}{
     \printglossary[type=\acronymtype, title=Akronyme]
@@ -55,12 +60,13 @@
     \printglossary[type=\acronymtype]
 }
 
-% *******
-% Your Content here
-% *******
+% =============================
+% == Place your content here ==
 
-% Replace this
+% Example of how .tex files can be inserted (Can be removed) 
 \input{pages/chapter/example.tex}
+
+% =============================
 
 % References
 \printbibliography
